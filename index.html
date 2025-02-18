@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumura - Innovating the Future</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #1E1E2F;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #00FFCC;
+        }
+
+        a {
+            color: #00FFCC;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #1E1E2F, #0A0A1A);
+            padding: 100px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .hero .cta-button {
+            background-color: #00FFCC;
+            color: #1E1E2F;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #00CCAA;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #0A0A1A;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #0A0A1A;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 255, 204, 0.3);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 255, 204, 0.5);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0A0A1A;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 2px solid #00FFCC;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 1.5rem;
+            color: #00FFCC;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-card {
+                width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Lumura</h1>
+        <p>Innovating the future with cutting-edge technology and visionary solutions.</p>
+        <a href="#services" class="cta-button">Explore Our Services</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Lumura</h2>
+        <p>Formerly known as Sekatech, Lumura was born in the halls of Government Bilingual High School (Lycee Bilingue de NYALLA) when Seka Alvin was in Form 3. The vision to bring tech innovation to life started with the dream of simplifying the complex world of technology, creating accessible and impactful solutions.</p>
+        <p>What started as a simple idea has now evolved into a company at the forefront of the tech industry, specializing in AI, web development, and cybersecurity. Our journey is just beginning!</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>AI & Machine Learning</h3>
+                <p>Revolutionize your business with intelligent automation and data-driven insights.</p>
+            </div>
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Build modern, responsive, and scalable web applications tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Cybersecurity</h3>
+                <p>Protect your digital assets with state-of-the-art security solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Lumura (formerly Sekatech). All rights reserved. | Designed by Seka Alvin</p>
+        <div class="social-icons">
+            <a href="#" target="_blank">🔗</a> <!-- Replace with actual social links -->
+            <a href="#" target="_blank">🌐</a> <!-- Replace with actual social links -->
+            <a href="#" target="_blank">📱</a> <!-- Replace with actual social links -->
+        </div>
+    </footer>
+</body>
+</html>
