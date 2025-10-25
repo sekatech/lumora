@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invest Consulting SARL | Cabinet de Conseil</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <style>
-        /* Add styles for the logo and dropdown */
+        /* intentionaly merged with HTML styles for the logo and dropdown */
         .logo-img {
-            height: 40px;
+            height: 60px; /* reduce it or add vary it*/
             width: auto;
         }
         
@@ -117,6 +116,11 @@
             nav ul li {
                 margin: 10px 0;
             }
+            
+            .dropdown-content {
+                position: static;
+                box-shadow: none;
+            }
         }
     </style>
 </head>
@@ -159,7 +163,7 @@
         </div>
     </header>
 
-    <!-- The rest of your content remains exactly the same -->
+    <!-- commment intentionally left here for memorizing (seka) -->
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
@@ -437,7 +441,57 @@
         <div class="container">
             <div class="footer-container">
                 <div class="footer-col">
-                    <h3>Sekatech Digital</h3>
-                    <p>Providing comprehensive di
+                    <h3>Invest Consulting SARL</h3>
+                    <p>Providing comprehensive consulting solutions for businesses since 2015.</p>
+                    <p>Helping businesses establish and grow their presence in international markets.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Lien rapide</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Temoignages</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Conseil en Finance & Gestion</a></li>
+                        <li><a href="#">Études de Marché & Intelligence Économique</a></li>
+                        <li><a href="#">Formation & Coaching Professionnel</a></li>
+                        <li><a href="#">Conseil en Stratégie</a></li>
+                        <li><a href="#">Conseil en Transformation Digitale</a></li>
+                        <li><a href="#">Conseil en Organisation & Processus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for business insights and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Invest consulting SARL. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script>
+        
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
